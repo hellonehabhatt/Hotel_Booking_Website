@@ -5,17 +5,32 @@ body{
 	background-color:#e0e0e0;
 }
 header {
-	 background-color:rosybrown;
+	background-color:rosybrown;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+	top: 0%;
+	width: 100%;
 }
 header img{
-	height:60px;
-	width:60px;	
+   height:60px;
+   width:60px;	
+}
+header a{
+   display: flex;
+   align-items: center;
+   margin-right: 2%;
+}
+a {
+	text-decoration: none;
+	color: black;
 }
 content div {
 	background-color: rgb(132,136,139);
 	width: 50%;
 	height: 20%;
-	margin: 2% auto;
+	margin: 8% auto;
 }
 contact {
 	display: block;
@@ -33,9 +48,19 @@ content img{
 	width:500px;
 }
 footer {
-	 background-color:rosybrown;
+	background-color:rosybrown;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	bottom:0;
+	width: 100%;
 }
 footer img{
-	height:20px;
-	width:22px;
+   height:20px;
+   width:22px;
+}
+footer p {
+   align-self: flex-end;
 }
