@@ -10,7 +10,7 @@ header {
 	 display: flex;
 	 flex-direction: row;
 	 justify-content: space-between;
-     position: fixed;
+     position: sticky;
 	 top: 0%;
 	 width: 100%;
 }
@@ -35,6 +35,7 @@ search {
 	background-position: center center;
 }
 search input {
+	width: 300px;
 	border: 1px transparent;
 	background-color: #f1f1f1;
 	padding: 10px;
@@ -42,29 +43,49 @@ search input {
 	border-radius: 12px;
 	margin:auto;
 }
-content img{
+input:focus {
+	outline:none;
+}
+.image img{
 	height:150px;
 	width:150px;
-	border-radius :25%;
-	padding : 4%;
+	border-radius :35%;
+	box-shadow:10px 10px 10px gray;
+	-webkit-transition: .2s all;
 }
-citycard {
-	display: block;
-	margin-left : 11%;
-	margin-right : 11%;
-	margin-bottom: 100px;
+.image img:hover {
+    -webkit-filter: brightness(60%);
 }
-citycard a:last-of-type {
+.image img:hover+span {
+	visibility:visible;
+}
+span {
+	visibility: hidden;
+	position: absolute;
+	color: #f1f1f1;
 	display: flex;
 	justify-content: center;
+	
 }
+citycard {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding : 4%;
+}
+content a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 footer {
 	 background-color:rosybrown;
 	 display: flex;
 	 flex-direction: row;
 	 justify-content: space-between;
 	 align-items: center;
-	 position: fixed;
+	 position: sticky;
 	 bottom:0;
 	 width: 100%;
 }
@@ -72,6 +93,6 @@ footer img{
 	height:20px;
 	width:22px;
 }
-footer p {
-	align-self: flex-end;
+sociallink {
+	margin-right: 2%;
 }

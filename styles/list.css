@@ -10,7 +10,7 @@ header {
 	 display: flex;
 	 flex-direction: row;
 	 justify-content: space-between;
-	 position:fixed;
+	 position:sticky;
 	 width: 100%;
 	 top:0%;
 }
@@ -27,13 +27,8 @@ a {
 	text-decoration: none;
 	color: black;
 }
-content {
-	display: block;
-    margin-top: 60px;
-}
 content div {
-	background-color:rgb(132,136,139);
-
+	background-color:lightgray;
 	margin : 2%;
 	width:40%;
 	margin-bottom: 60px;
@@ -59,7 +54,7 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
+	position: sticky;
 	bottom:0;
 	width: 100%;
 }
@@ -78,3 +73,7 @@ map {
 	flex-direction: row;
 	justify-content: space-between;
 }
+.image {
+	display: flex;
+	flex-direction: row;
+} 

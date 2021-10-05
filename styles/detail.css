@@ -9,7 +9,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	position: fixed;
+	position: sticky;
 	top: 0%;
 	width: 100%;
 }
@@ -23,13 +23,13 @@ header a{
    margin-right: 2%;
 }
 content div{
-	margin-top: 8%;
+	margin-top: 2%;
 	margin-left: 4%;
 	margin-right: 4%;
 }
 content img{
-	height:500px;
-	width:500px;
+	height:300px;
+	margin-left: 100px;;
 }
 a {
 	text-decoration: none;
@@ -41,7 +41,7 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
+	position: sticky;
 	bottom:0;
 	width: 100%;
 }
@@ -52,3 +52,26 @@ footer img{
 footer p {
    align-self: flex-end;
 }
+.card {
+	display: flex;
+	flex-direction: row;
+	border: 1.6px solid black;
+	width: 90%;
+}
+#frm {
+	border-left: 1.6px solid black;
+	margin: 0;
+	margin-left: 10%;
+	width:50%;
+}
+label {
+	display: inline-block;
+	width: 100px;
+	margin: 15px;
+}
+input {
+	align-items: left;
+}
+	#photo {
+		margin-top: 5px;
+	}
