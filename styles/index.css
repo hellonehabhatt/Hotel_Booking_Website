@@ -20,8 +20,13 @@ header img{
 }
 header a{
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	margin-right: 2%;
+}
+.btn-login {
+	height: 30px;
+	margin-top:15px
 }
 a {
 	text-decoration: none;
@@ -80,6 +85,7 @@ content a {
 }
 
 footer {
+	height:60px;
 	 background-color:rosybrown;
 	 display: flex;
 	 flex-direction: row;
@@ -96,3 +102,12 @@ footer img{
 sociallink {
 	margin-right: 2%;
 }
+
+form {
+	width: 85%;
+	margin:auto;
+}
+label {
+	width:150px;
+}
+

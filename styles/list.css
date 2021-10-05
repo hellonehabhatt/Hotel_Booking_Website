@@ -31,10 +31,12 @@ content div {
 	background-color:lightgray;
 	margin : 2%;
 	width:40%;
-	margin-bottom: 60px;
+}
+content div:hover {
+	background-color: rosybrown;
 }
 content div img {
-	height:250px;
+	height:200px;
 	width:250px;
 }
 content ul {
@@ -57,6 +59,7 @@ footer {
 	position: sticky;
 	bottom:0;
 	width: 100%;
+	height: 60px;
 }
 footer img{
    height:20px;
@@ -77,3 +80,14 @@ map {
 	display: flex;
 	flex-direction: row;
 } 
+
+.btn-login {
+	height: 30px;
+	margin-top:15px
+}
+map:active {
+	display: block;
+}
+map:visited {
+	display:block;
+}
